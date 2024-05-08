@@ -68,7 +68,8 @@
                 display: none;
             }
             div#floor-plan {
-                padding-top: 50px;
+                /* padding-top: 50px; */
+                padding: 3em 0 !important;
             }
             div#location {
                 padding-bottom: 0;
@@ -151,8 +152,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </p>
                         <p>An ultra luxurious condominium of beautifully located apartment blocks, Dream Valley promise to push the benchmark of refined high class living several notches higher.</p>
 
-                        <div class="sp-dwn-brc">
-                            <a href="#" data-toggle="modal" data-target="#myModal2" class="sp-download-brochure">
+                        <div class="sp-dwn-brc hidden-xs">
+                            <a href="#" data-toggle="modal" data-target="#myModal2" class="sp-download-brochure pulseanimation">
                                 Download Brochure
                             </a>
                         </div>
@@ -162,40 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <br />
             </div>
         </div>
-        <div id="location" class="container-fluid">
-            <div class="container">
-                <h1 class="sp-fea-titl">Location <span></span></h1>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7125.9793861845565!2d88.403168!3d26.744705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe944862117782cc0!2sDream%20Valley!5e0!3m2!1sen!2sus!4v1600444179502!5m2!1sen!2sus"
-                            width="100%"
-                            height="416"
-                            frameborder="0"
-                            style="border: 0;"
-                            allowfullscreen=""
-                            aria-hidden="false"
-                            tabindex="0"
-                        ></iframe>
-                        <a style="color: white;" rel="dofollow" href="https://www.giftdesignacademy.in/">.</a><a style="color: white;" rel="dofollow" href="https://propello.in/">.</a>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>Location Advantage</h3>
-                        <p>Dream Valley is on a dream location.</p>
-
-                        <p>Situated on the Hill Cart road Dream Valley is part of Siliguri's best location for a comfortable and quite residental dwelling where serenity and peace is a way of life.</p>
-
-                        <p>A comfortable drive from the airport, Dream Valley is strategically located to provide the advantages of city living in clean and upmarket location.</p>
-
-                        <p>Offering extraordinary views of Tea Gardens and the Mountain ranges you are literally in a 5 Star environment.</p>
-
-                        <p>A special in house transport can drop residents to Darjeeling more for convenience.</p>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <br />
-        </div>
+        
         <div id="floor-plan" class="container-fluid">
             <div class="container">
                 <h1 class="sp-fea-titl">floor <span>plan</span></h1>
@@ -549,6 +517,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
             </div>
+
+            <div id="location" class="container-fluid">
+            <div class="container">
+                <h1 class="sp-fea-titl">Location <span></span></h1>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7125.9793861845565!2d88.403168!3d26.744705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe944862117782cc0!2sDream%20Valley!5e0!3m2!1sen!2sus!4v1600444179502!5m2!1sen!2sus"
+                            width="100%"
+                            height="416"
+                            frameborder="0"
+                            style="border: 0;"
+                            allowfullscreen=""
+                            aria-hidden="false"
+                            tabindex="0"
+                        ></iframe>
+                        <a style="color: white;" rel="dofollow" href="https://www.giftdesignacademy.in/">.</a><a style="color: white;" rel="dofollow" href="https://propello.in/">.</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Location Advantage</h3>
+                        <p>Dream Valley is on a dream location.</p>
+
+                        <p>Situated on the Hill Cart road Dream Valley is part of Siliguri's best location for a comfortable and quite residental dwelling where serenity and peace is a way of life.</p>
+
+                        <p>A comfortable drive from the airport, Dream Valley is strategically located to provide the advantages of city living in clean and upmarket location.</p>
+
+                        <p>Offering extraordinary views of Tea Gardens and the Mountain ranges you are literally in a 5 Star environment.</p>
+
+                        <p>A special in house transport can drop residents to Darjeeling more for convenience.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container-fluid sp-footer">
             <div class="container">
@@ -589,7 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="prop-dtl footer-area-from">+91 9681 611 611</span>-->
                     </div>
                     <div class="col-12 col-lg-3 d-flex justify-content-end align-items-center">
-                        <a href="javascript:void(0);" class="btn btn-blue get-touch-btn font-20" data-toggle="modal" data-target="#myModal">Enquire Now</a>
+                        <a href="javascript:void(0);" class="btn btn-blue get-touch-btn font-20 pulseanimation" data-toggle="modal" data-target="#myModal">Enquire Now</a>
                     </div>
                 </div>
             </div>
@@ -642,9 +642,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="form-group">
                                 <input type="hidden" name="source_url" value="https://dreamvalley.net.in/" />
                                 <input type="hidden" name="thankyouurl" value="https://dreamvalley.net.in/thankyou.php" />
-                                <!-- <input type="hidden" name="utm_source" value="0" />
+                                <input type="hidden" name="utm_source" value="0" />
                                 <input type="hidden" name="utm_campaign" value="0" />
-                                <input type="hidden" name="utm_medium" value="0" /> -->
+                                <input type="hidden" name="utm_medium" value="0" />
                                 <!--<input type="hidden" value="2nd Agency" name="agency">-->
                                 <button type="submit" class="btn" id="loginBtn" name="loginBtn">SUBMIT</button>
                             </div>
@@ -758,9 +758,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="form-group">
                                 <input type="hidden" name="source_url" value="https://dreamvalley.net.in/" />
                                 <input type="hidden" name="thankyouurl" value="https://dreamvalley.net.in/thankyoufordownloading.php" />
-                                <!-- <input type="hidden" name="utm_source" value="0" />
+                                <input type="hidden" name="utm_source" value="0" />
                                 <input type="hidden" name="utm_campaign" value="0" />
-                                <input type="hidden" name="utm_medium" value="0" /> -->
+                                <input type="hidden" name="utm_medium" value="0" />
                                 <button type="submit" class="btn" id="loginBtn2" name="loginBtn2">SUBMIT</button>
                             </div>
                         </form>

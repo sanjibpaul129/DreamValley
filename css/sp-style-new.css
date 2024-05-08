@@ -60,12 +60,12 @@ body {
 #flat-tour,
 #construction,
 #views {
-    padding: 3em 0;
+    padding: 3em 0 !important;
 }
 .sp-fea-titl {
     position: relative;
     color: #000;
-    text-align: left;
+    text-align: center;
     margin-top: 15px;
     margin-bottom: 25px;
     font-size: 2.5rem;
@@ -80,11 +80,14 @@ body {
     bottom: 0;
     content: "";
     height: 2px;
-    left: 0;
-    position: absolute;
+    /* left: 0; */
+    display: block;
+    margin: 0 auto;
+    /* position: absolute; */
     width: 50px;
     -webkit-animation: titleBorder 1s;
     animation: titleBorder 1s;
+    margin-top: 10px;
 }
 .sp-box span {
     font-size: 35px;
@@ -195,7 +198,7 @@ body {
     background: #071c35;
     color: #ffffff;
     padding: 20px 15px;
-    margin-bottom: 4.9%;
+    /* margin-bottom: 4.9%; */
 }
 .sp-footer p {
     margin: 0;
@@ -342,7 +345,7 @@ body {
     padding: 15px 0 11px;
     font-size: 15px;
     color: white;
-    background: #be9331;
+    background: #071c35;
 }
 .modal-title {
     margin: 0;
@@ -366,7 +369,14 @@ body {
     height: auto;
     width: 40px;
 }
-.sp-dwn-brc{}
+.sp-dwn-brc{
+    transform: rotate(270deg);
+    position: fixed;
+    z-index: 999;
+    right: -4%;
+    /* left: 88%; */
+    bottom: 58%;
+}
 .sp-download-brochure{
     background: #071c35;
     color: white;
@@ -530,3 +540,36 @@ body {
 }
 }#ame ul li{}
 #ame{padding:3em 15px}
+
+/* ----pluseanimation---- */
+.pulseanimation {
+    animation: pulse-cust 2s infinite;
+}
+
+@-webkit-keyframes pulse-cust {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #fff;
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 25px rgba(227, 56, 56, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(227, 56, 56, 0);
+    }
+}
+
+@keyframes pulse-cust {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #000;
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 25px rgba(227, 56, 56, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(227, 56, 56, 0);
+    }
+}
